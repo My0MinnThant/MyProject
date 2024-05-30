@@ -26,7 +26,8 @@ $routes = [
 '/' => 'controllers/index.php',
 '/about' => 'controllers/about.php',
 '/contact' => 'controllers/contact.php',
-'/testing' => 'controllers/testing.php'
+'/testing' => 'controllers/testing.php',
+'/notes'  => 'controllers/note.php'
 ];
 
 if(array_key_exists($url, $routes)){
@@ -38,8 +39,5 @@ if(array_key_exists($url, $routes)){
 
 
 
-echo "<pre>";
-dd($posts);
-echo "</pre>";
 
  

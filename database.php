@@ -10,9 +10,9 @@ class Database {
         $this->connection = new PDO($dbb, 'root');
     }
 
-    public function query($value){
+    public function query($query){
     
-    $statement = $this->connection->prepare($value);
+    $statement = $this->connection->prepare($query);
 
     $statement->execute();
 
@@ -22,7 +22,8 @@ class Database {
 }
 
 $db = new Database();
-$posts = $db->query('select * from posts where id=1')->fetchALL(PDO::FETCH_ASSOC);
+$posts = $db->query('SELECT users.name, users.email, notes.body from users 
+join notes on users.id = notes.user_id')->fetchALL(PDO::FETCH_ASSOC);
 
 
 

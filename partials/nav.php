@@ -12,6 +12,7 @@
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
     <a href="/testing" >Testing</a>
+    <a href="/notes" >Note</a>
     </ul>
 
     
